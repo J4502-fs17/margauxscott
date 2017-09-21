@@ -38,7 +38,7 @@ body{
 #nav a:link, a:visited {
   display:block;
   color: #ffffff;
-  background-color: #98bf21;
+  background-color: #392bca;
   font-weight: bold;
   text-align:center;
   text-decoration: none;
@@ -47,5 +47,5 @@ body{
 }
 
 #nav a:hover, a:active {
-  background-color: #7a991a;
+  background-color: #776ced;
 }
