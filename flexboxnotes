@@ -1,0 +1,102 @@
+/*flexbox*/
+
+<div class>
+
+
+
+.container{
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  }
+
+/*or*/
+
+.container{
+display:flex;
+flex-flow:row wrap;
+}
+
+.container{
+display:flex;
+justify-content: center /* or space-between, space-around, etc*/
+}
+
+
+----------------------------
+.container{
+display:flex;
+height:500px;
+align-items:baseline;
+}
+
+.item-1{
+  font size:1.35em;
+  }
+
+  .item-3{
+  font-size:0.8em;
+  }
+
+  -----------------------
+
+  .container{
+  display:flex
+  height: 300px;
+  flex-wrap:wrap;
+  align-content:space-around;
+  }
+
+
+  -----------------------
+  flex item properties (applied to specific item rather than container as a whole)
+
+.item-2{
+order:-1; /* moves item to the first in the series*/
+}
+
+.item-6{
+order:1; /*every other item has an order of 0, so this moves item 6 to the end of the order*/
+}
+
+-----------------------------
+flex-grow (fill the space equally)
+
+.item{
+flex-grow:1;
+}
+
+.item-2{
+flex-grow:2; /* grows just item 2*/
+}
+
+-----------------------------------
+flex-shrink
+
+.container{
+display:flex
+height:300px
+flex-wrap:nowrap;
+}
+
+.item{
+flex-grow:1;
+flex-shrink:1;
+flex-basis:
+}
+
+-------------------------------------
+flex-basis
+
+.container{
+display:flex
+}
+
+.item{
+flex-basis:0
+flex-grow:1;
+}
+
+.item-3{
+flex-grow:
+}
