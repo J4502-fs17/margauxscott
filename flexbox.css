@@ -2,17 +2,17 @@
   Flexbox
 ==================================== */
 
-.container{
-  display:flex;
-  flex-direction:row;
-  flex-wrap:wrap;
+.container {
+	display: flex;
+	flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  }
+}
 
 @media (min-width: 600px) {
 	.container {
 		flex-direction: row;
-    justify-content: space-around;
+		justify-content: space-around;
 	}
 }
