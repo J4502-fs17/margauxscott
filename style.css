@@ -6,17 +6,21 @@
 * {
   box-sizing: border-box;
 }
+
 p{
   color:#1d166e;
   font-family: Georgia, "Times New Roman", serif;
+  text-align: center;
 }
 
 h1{
   font-family:'Merriweather', serif;
+  text-align: center;
 }
 
 body{
   background-color:#afafba;
+  text-align: center;
 }
 
 #container{
