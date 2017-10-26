@@ -10,7 +10,7 @@ p{
 }
 
 h1{
-  font-family: "Palatino Linotype", "Book Antiqua", serif;
+  font-family:'Merriweather', serif;
 }
 
 body{
@@ -22,6 +22,12 @@ body{
   background-color: #96A3D8;
   margin: 0 auto;
 }
+
+.container{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  }
 
 #nav{
   padding: 0;
