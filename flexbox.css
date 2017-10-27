@@ -3,7 +3,7 @@
 ==================================== */
 .Margaux {
   display: flex;
-  min-height: 100vh;
+  min-height: 100%;
   flex-direction: column;
 }
 
@@ -14,12 +14,14 @@
   justify-content: space-around;
   align-items: center;
 	height: 100px;
-	width: 100%;
+	flex-direction:column;
+
 }
 
 .page {
     display: flex;
-    flex: 1;
+    flex-direction: column
+
 }
 
 .page > * {
@@ -27,13 +29,12 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
+		width: 100%
 }
 
 .maincontent {
-    grid-column: 2;
-		grid-row: 2
 		display:flex;
-		flex: 1
+		flex: 1 0 auto;
 }
 
 .sidebar {
@@ -41,7 +42,7 @@
 		height: 500px;
 		display:flex;
 		flex-direction:row;
-		order: -1;
+		order: 2;
 		flex: 0 0 12em;
 }
 
@@ -62,4 +63,8 @@
     /* 12em is the width of the columns */
     flex: 0 0 12em;
   }
+	.container{
+		flex-direction: row;
+
+	}
 }
