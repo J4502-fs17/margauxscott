@@ -1,22 +1,25 @@
 /* =================================
   Flexbox
 ==================================== */
+.Margaux {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
 .container {
 	display: flex;
-	flex-direction: column;
+	flex:1
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 	height: 100px;
-	width: 1300px;
+	width: 100%;
 }
 
 .page {
-    display: grid;
-    /*grid-template-columns: 1fr 4fr 1fr;*/
-    grid-template-columns: 150px 1fr 150px;
-    grid-gap: 20px;
+    display: flex;
+    flex: 1;
 }
 
 .page > * {
@@ -29,12 +32,17 @@
 .maincontent {
     grid-column: 2;
 		grid-row: 2
+		display:flex;
+		flex: 1
 }
 
 .sidebar {
-    grid-column: 1;
-    grid-row: 1;
+
 		height: 500px;
+		display:flex;
+		flex-direction:row;
+		order: -1;
+		flex: 0 0 12em;
 }
 
 .photo{
@@ -43,7 +51,15 @@
 
 }
 @media (min-width: 600px) {
-	.container {
-		flex-direction: row;
-		justify-content: space-around;
-	}
+  .page {
+    flex-direction: row;
+
+  }
+  .maincontent {
+    flex: 1;
+  }
+  .sidebar {
+    /* 12em is the width of the columns */
+    flex: 0 0 12em;
+  }
+}
