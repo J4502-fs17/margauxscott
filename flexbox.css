@@ -8,11 +8,41 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+	height: 200px;
 }
 
+.page {
+    display: grid;
+    /*grid-template-columns: 1fr 4fr 1fr;*/
+    grid-template-columns: 150px 1fr 150px;
+    grid-gap: 20px;
+}
+
+.page > * {
+    background-color: #273ca5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.maincontent {
+    grid-column: 2;
+		grid-row: 2
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 1;
+		height: 500px;
+}
+
+.photo{
+	grid-column: 2
+	grid-row: 3;
+
+}
 @media (min-width: 600px) {
 	.container {
 		flex-direction: row;
 		justify-content: space-around;
 	}
-}

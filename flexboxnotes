@@ -1,6 +1,7 @@
 /*flexbox*/
 
-<div class>
+<div class="container">
+  <div class
 
 
 
@@ -98,5 +99,66 @@ flex-grow:1;
 }
 
 .item-3{
-flex-grow:
+flex-grow:2;
+}
+
+----------------------------
+shorthand property
+
+.item{
+  flex:1 200px;
+  }
+
+------------------------------
+
+.container{
+display:flex
+height:300px
+flex-wrap:nowrap;
+align-items;flex-start;
+}
+
+.item-2{
+align-self:center;
+}
+
+
+.item-1{
+font-size:2em;
+}
+
+.item-3{
+font-size:0.5em;
+}
+
+-------------------------------------
+Centering:
+
+.container{
+  display:flex
+  height:300px
+  }
+
+  .item{
+  margin:auto;
+  }
+
+-------------------------------------
+Responsive design
+
+.container{
+display:flex;
+flex-direction:column;
+}
+
+@media (min-width:600px){/*when you get to 600px, it will go to row, above 600px, it will be a column*/
+.container{
+flex-direction:row;
+justify-content:center;
+}
+}
+
+@media (min-width:799px)
+.item-1{
+margin-right:auto;
 }
