@@ -17,45 +17,6 @@ nav ul {
     }
 
 }
-@media screen and (min-width:1000px) {
-  article {
-    display: grid;
-    grid-template-areas:
-      "header header header"
-      "nav article sidebar"
-      "nav footer footer";
-    grid-template-rows: 80px 1fr 70px;
-    grid-template-columns: 20% 1fr 15%;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-    height: 100vh;
-    margin: 0;
-
-
-  }
-
-
-  #header{
-      grid-area: header;
-   }
-
-   #nav{
-    grid-area: nav;
-    }
-
-   #maincontent{
-    grid-area: article;
-
-  }
-
-   #sidebar{
-    grid-area: sidebar;
-  }
-
-  #footer{
-    grid-area: footer;
-
-}
 
 @media screen and (max-width: 575px) {
   body {
@@ -69,4 +30,39 @@ nav ul {
     grid-template-columns: 1fr;
  }
 }
+
+@media screen and (min-width:1000px) {
+  .page {
+    display: grid;
+      grid-template-rows: 200px 1fr 1fr;
+    grid-template-areas:
+      "main main sidebar"
+      "main main sidebar"
+      "footer footer footer";
+
+    /*grid-template-columns: 20% 1fr 15%;*/
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+
+
+  }
+
+  .main{
+      grid-area: main;
+   }
+
+   .sidebar{
+    grid-area: sidebar;
+    }
+
+   .footer{
+    grid-area: footer;
+
+  }
+
+  }
+
+
 </style>
