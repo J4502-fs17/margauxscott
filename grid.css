@@ -8,76 +8,62 @@ nav ul {
   display: flex;
   flex-flow: column;
 }
+
+@media screen and (min-width: 450px) {
+
+    nav ul {
+        flex-flow: row;
+        justify-content: space-between;
+    }
+
+}
 @media screen and (min-width:1000px) {
   article {
     display: grid;
-    grid-template-columns: 200px 1fr 1fr;
-    grid-gap: 20px;
     grid-template-areas:
-        "a a a"
-        "b c d"
-        "b c d";
+      "header header header"
+      "nav article sidebar"
+      "nav footer footer";
+    grid-template-rows: 80px 1fr 70px;
+    grid-template-columns: 20% 1fr 15%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    height: 100vh;
+    margin: 0;
+
+
   }
 
-  .nav{
-    grid-area: b;
-    }
 
-  .header{
-      grid-area: a;
+  #header{
+      grid-area: header;
    }
 
-  .maincontent{
-    grid-area: c;
+   #nav{
+    grid-area: nav;
+    }
+
+   #maincontent{
+    grid-area: article;
 
   }
 
-  .sidebar{
-    grid-area: d;
-  }
-
-/*<style>
-body {
-  display: grid;
-  grid-template-areas:
-    "header header header"
-    "nav article sidebar"
-    "nav footer footer";
-  grid-template-rows: 80px 1fr 70px;
-  grid-template-columns: 20% 1fr 15%;
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
-  height: 100vh;
-  margin: 0;
-  }
-header, footer, article, nav, div {
-  padding: 1.2em;
-  background: #96A3D8;
-  }
-#Header {
-  grid-area: header;
-  }
-#Footer {
-  grid-area: footer;
-  }
-  #sidebar{
+   #sidebar{
     grid-area: sidebar;
   }
-#maincontent {
-  grid-area: article;
-  }
-#Nav {
-  grid-area: nav;
-  }
+
+  #footer{
+    grid-area: footer;
+
 }
-/* Stack the layout on small devices/viewports. */
-/*@media all and (max-width: 575px) {
+
+@media screen and (max-width: 575px) {
   body {
     grid-template-areas:
       "header"
+      "nav"
       "article"
       "sidebar"
-      "nav"
       "footer";
     grid-template-rows: 80px 1fr 70px 1fr 70px;
     grid-template-columns: 1fr;
