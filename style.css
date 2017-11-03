@@ -16,6 +16,9 @@ p{
 h1{
   font-family:'Merriweather', serif;
   text-align: center;
+  font-size: 2em;
+  margin-top: 0.5em;
+
 }
 
 body{

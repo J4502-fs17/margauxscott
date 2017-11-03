@@ -8,6 +8,33 @@ nav ul {
   display: flex;
   flex-flow: column;
 }
+@media screen and (min-width:1000px) {
+  article {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+        "a a a"
+        "b c d"
+        "b c d";
+  }
+
+  .nav{
+    grid-area: b;
+    }
+
+  .header{
+      grid-area: a;
+   }
+
+  .maincontent{
+    grid-area: c;
+
+  }
+
+  .sidebar{
+    grid-area: d;
+  }
 
 /*<style>
 body {
