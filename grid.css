@@ -1,11 +1,20 @@
-<!doctype html>
-<title>Margaux's website </title>
-<style>
+
+.title{
+  display:flex;
+  justify-content: space-between;
+
+}
+nav ul {
+  display: flex;
+  flex-flow: column;
+}
+
+/*<style>
 body {
   display: grid;
   grid-template-areas:
     "header header header"
-    "nav article ads"
+    "nav article sidebar"
     "nav footer footer";
   grid-template-rows: 80px 1fr 70px;
   grid-template-columns: 20% 1fr 15%;
@@ -18,28 +27,29 @@ header, footer, article, nav, div {
   padding: 1.2em;
   background: #96A3D8;
   }
-#pageHeader {
+#Header {
   grid-area: header;
   }
-#pageFooter {
+#Footer {
   grid-area: footer;
   }
-#mainArticle {
+  #sidebar{
+    grid-area: sidebar;
+  }
+#maincontent {
   grid-area: article;
   }
-#mainNav {
+#Nav {
   grid-area: nav;
   }
-#siteAds {
-  grid-area: ads;
-  }
+}
 /* Stack the layout on small devices/viewports. */
-@media all and (max-width: 575px) {
+/*@media all and (max-width: 575px) {
   body {
     grid-template-areas:
       "header"
       "article"
-      "ads"
+      "sidebar"
       "nav"
       "footer";
     grid-template-rows: 80px 1fr 70px 1fr 70px;
