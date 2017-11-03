@@ -7,6 +7,11 @@
   flex-direction: column;
 }
 
+nav ul {
+  display: flex;
+  flex-flow: column;
+
+}
 .container {
 	display: flex;
 	flex:1
@@ -67,4 +72,9 @@
 		flex-direction: row;
 
 	}
+  .footer{
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+  }
 }
