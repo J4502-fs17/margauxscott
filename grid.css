@@ -18,8 +18,6 @@ nav ul {
 
 }
 
-
-
 @media screen and (min-width:1000px) {
   .page {
     display: grid;
