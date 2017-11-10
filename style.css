@@ -47,9 +47,22 @@ p{
   	box-shadow: 0 1.5px 0 0 rgba(0,0,0,0.1);
   }
 
-nav ul {
-  padding: 0;
-}
+  header {
+    display:flex;
+    flex-flow:row;
+    margin:0;
+    padding:0 10px;
+
+  }
+
+  .menu-trigger{
+    order:1;
+  }
+
+  header h1{
+    order:2;
+  }
+
 
 nav ul li{
   list-style-type:none;
@@ -90,4 +103,32 @@ a:hover {
     color: #ffffff;
 }
 
+nav ul {
+  padding: 0;
+  display: none;
+}
+
+
+
+
+@media screen and (min-width: 700px){
+  nav ul{
+    display:flex;
+  }
+
+  .menu-trigger{
+    display:none;
+  }
+
+  nav ul li{
+    border-top:none;
+  }
+
+  nav{
+    order:2;
+  }
+
+  header h1{
+    order:1;
+  }
 }
